@@ -28,6 +28,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Mulai from './screen/Mulai';
 import Menu from './screen/Menu';
+import Belajar from './screen/Belajar';
 
 const Stack = createNativeStackNavigator();
 
@@ -42,6 +43,7 @@ const App = () => {
                 />
 
                 <Stack.Screen name='Menu' component={Menu}/>
+                <Stack.Screen name='Belajar' component={Belajar}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

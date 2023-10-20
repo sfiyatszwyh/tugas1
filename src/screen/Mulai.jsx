@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
-import {Text, StyleSheet, View, Alert,} from 'react-native';
+import {Text, StyleSheet, View, Alert, Image} from 'react-native';
 import Tombol from '../components/Tombol';
+//import MyImageComponent from "../components/MyImageComponent";
+//import Card from '../components/Card';
+
 
 export default class Mulai extends Component{
     render(){
         return(
-           
             <View style={styles.box}>
+            
             <Tombol
                 label={'Ke Menu'}
                 onPress={() => this.props.navigation.navigate('Menu')}
