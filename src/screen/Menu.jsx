@@ -19,6 +19,7 @@ export default class Mulai extends Component{
     render(){
         return(
             <View style={Layout.box}>
+            
             <Text style={{ fontSize: 24, color: 'blue' }}>Mari belajar bersama belajarkuy</Text>
             <Tombol
                 label={'Belajar'}

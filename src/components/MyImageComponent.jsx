@@ -1,11 +1,13 @@
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 
+import Gambar from '../../images/icon.JPG';
+
 const MyImageComponent = () => {
     return (
       <View style={styles.container}>
         <Image
-          source={require('./images/icon.JPG')} 
+          source={{ uri: Gambar }} 
           style={styles.image}
         />
       </View>
