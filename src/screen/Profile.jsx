@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
 import React, {Component} from 'react'
 import Input from '../components/Input'
 
@@ -10,14 +10,16 @@ export default class Profile extends Component{
       profil: "Halaman Profile"
     }
   }
-
   render(){
     return(
-      <View style={styles.box}> 
-        <Text>{this.state.profil}</Text>
-        <Input placeholder={'Ketik Nama Anda'} typeKeyboard={'email'}/>
-        <Input placeholder={'Ketik Alamat Anda'} multiline={true}/>
+      <View>
+        <View style={styles.box}> 
+          <Text>{this.state.profil}</Text>
+          <Input placeholder={'Ketik Nama Anda'} typeKeyboard={'email'}/>
+          <Input placeholder={'Ketik Alamat Anda'} multiline={true}/>
+        </View>
       </View>
+      
     );
   }
 }
