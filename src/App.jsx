@@ -23,8 +23,18 @@ const Tabs = () =>{
                 ),
             }} 
             component={Menu}/>
+             <Tab.Screen 
+            name='Belajar' 
+            options={{ 
+                headerShown: false, 
+                tabBarLabel: 'Belajar',
+                tabBarIcon:({color, size}) => (<MaterialCommunityIcons name="book" color={color} size={size} />
+                ),
+            }} 
+            component={Belajar}/>
             <Tab.Screen name='Profile' 
             options={{
+                headerShown: false,
                 tabBarLabel: 'Profile',
                 tabBarIcon: ({ color, size }) => (
                   <MaterialCommunityIcons name="account" color={color} size={size} />
@@ -43,8 +53,7 @@ const App = () => {
                     options={{ headerShown: false}}
                     component={Mulai}
                 />
-                <Stack.Screen name='Menu'  component={Tabs}/>
-                <Stack.Screen name='Belajar'  component={Belajar}/>
+                <Stack.Screen name='Menu'  options={{ headerShown: false}} component={Tabs}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
