@@ -13,7 +13,8 @@ export default Tombol;
 
 const styles = StyleSheet.create({
     text:{
-        fontSize: 20,
+        fontSize: 15,
+        color: 'black',
     },
     boxTombol:{
         backgroundColor: 'yellow',

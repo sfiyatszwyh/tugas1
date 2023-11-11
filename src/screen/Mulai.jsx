@@ -5,10 +5,13 @@ import Tombol from '../components/Tombol';
 export default class Mulai extends Component{
     render(){
         return(
-            <View style={styles.latar}>
+            <View>
                 <View style={styles.container}>
-                    <Image source={require('../images/img1.png')}
+                    <Image source={require('../images/2.png')}
                     style={styles.img}/>
+                </View>
+                <View>
+                    <Text style={styles.text}>Halo, ayo Join Bersama Kami di Belajarkuy</Text>
                 </View>
                 <View style={styles.box}>
                     <Tombol
@@ -23,18 +26,19 @@ export default class Mulai extends Component{
 }
 
 const styles = StyleSheet.create({
-    latar:{
-        backgroundColor: 'white'
-
-    },
     container: {
         justifyContent: 'center',
         alignItems: 'center',
       },
     img:{
-        
+        margin: 50,
         width: 300,
         height: 300,
+    },
+    text:{
+        fontSize: 15,
+        color: 'black',
+        padding: 10,
     },
     box: {
         margin: 20,
