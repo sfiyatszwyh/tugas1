@@ -7,7 +7,7 @@ export default class Mulai extends Component{
         return(
             <View>
                 <View style={styles.container}>
-                    <Image source={require('../images/2.png')}
+                    <Image source={require('../images/3.png')}
                     style={styles.img}/>
                 </View>
                 <View>
