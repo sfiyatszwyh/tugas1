@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import React from 'react'
 
 const Profile = () => {
@@ -9,25 +10,29 @@ const Profile = () => {
               <Text style={styles.text}>sfiyatszwyh</Text>
               <Text style={styles.id}>Id 2021</Text>
           </View>
-
           <View style={styles.item}>
-              <Image source={require('../images/Profile.png')}style={styles.imItem}/>
+          <MaterialCommunityIcons name="account" color={'black'} size={26} />
               <Text style={styles.textItem}>My Profile</Text>
               <Image source={require('../images/back.png')}style={styles.imgItem}/>
           </View>
           <View style={styles.item}>
-              <Image source={require('../images/lok.png')}style={styles.imItem}/>
+          <MaterialCommunityIcons name="map-marker" color={'black'} size={26} />
               <Text style={styles.textItem}>Addres</Text>
               <Image source={require('../images/back.png')}style={styles.imgItem1}/>
           </View>
           <View style={styles.item}>
-              <Image source={require('../images/Notification.png')}style={styles.imItem}/>
+              <MaterialCommunityIcons name="bell" color={'black'} size={26} /> 
               <Text style={styles.textItem}>Notification</Text>
               <Image source={require('../images/back.png')}style={styles.imgItem2}/>
           </View>
           <View style={styles.item}>
-              <Image source={require('../images/Setting.png')}style={styles.imItem}/>
+              <MaterialCommunityIcons name="cog" color={'black'} size={26} />
               <Text style={styles.textItem}>Setting</Text>
+              <Image source={require('../images/back.png')}style={styles.imgItem3}/>
+          </View>
+          <View style={styles.item}>
+              <MaterialCommunityIcons name="logout" color={'black'} size={26} />
+              <Text style={styles.textItem}>Logout</Text>
               <Image source={require('../images/back.png')}style={styles.imgItem3}/>
           </View>
     </View>
@@ -42,8 +47,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   img:{
-    width: 180,
-    height: 180,
+    width: 130,
+    height: 130,
     marginLeft: 100,
     marginRight: 100,
     objectFit: 'cover',
@@ -67,29 +72,24 @@ const styles = StyleSheet.create({
     padding: 15
   },
 
-  imItem: {
-    width: 27,
-    height: 33,
-  },
-
   imgItem: {
-    width: 25,
-    height: 25,
+    width: 22,
+    height: 22,
     left: 150,
   },
   imgItem1: {
-    width: 25,
-    height: 25,
+    width: 23,
+    height: 23,
     left: 172,
   },
   imgItem2: {
-    width: 25,
-    height: 25,
+    width: 22,
+    height: 22,
     left: 140,
   },
   imgItem3: {
-    width: 25,
-    height: 25,
+    width: 22,
+    height: 22,
     left: 170,
   },
 

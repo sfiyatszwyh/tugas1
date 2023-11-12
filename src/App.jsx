@@ -17,7 +17,7 @@ const Tabs = () =>{
     return(
         <Tab.Navigator>
             <Tab.Screen 
-            name='Menu' 
+            name='Home' 
             options={{ 
                 headerShown: false, tabBarIcon:({color, size}) => (<MaterialCommunityIcons name="home" color={color} size={size} />
                 ),
@@ -53,7 +53,7 @@ const App = () => {
                     options={{ headerShown: false}}
                     component={Mulai}
                 />
-                <Stack.Screen name='Menu'  options={{ headerShown: false}} component={Tabs}/>
+                <Stack.Screen name='Menu'   component={Tabs}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
